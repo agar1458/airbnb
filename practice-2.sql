@@ -1,5 +1,6 @@
 -- Can I see the AirBnb URL for all rentals that can accommodate my group of 16?
-
+.mode columns
+.headers on
 -- +---------------------------------------+--------------+
 -- | https://www.airbnb.com/rooms/1321332  | 16           |
 -- | https://www.airbnb.com/rooms/3172794  | 16           |
@@ -19,4 +20,6 @@
 -- | https://www.airbnb.com/rooms/25367014 | 16           |
 -- | https://www.airbnb.com/rooms/25682427 | 16           |
 
-
+SELECT url, accommodates
+FROM listings
+WHERE accommodates = 16;

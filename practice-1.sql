@@ -5,3 +5,6 @@
 -- +----------+
 
 
+SELECT count(*)
+FROM reviews
+INNER JOIN listings ON listings.id = reviews.listing_id;
